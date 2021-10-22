@@ -50,5 +50,12 @@ String initialStrings[] = {"name1", "name2"};
 		assertEquals(true, strings.add(3, "name3"));
 
 	}
+	
+	@Test
+	void testRemove() {
+		assertEquals(10, numbers.remove(0));
+		assertEquals(2, numbers.size());
+		assertEquals(null, numbers.remove(100));
 
+	}
 }
